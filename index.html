@@ -6,13 +6,38 @@
     <style>
 
         body {
-            background-color: rgb(138, 237, 255);
-            font-family: Arial, Helvetica, sans-serif
+            background-color:rgb(138, 237, 255);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:20px;
         }
         
         .headerOne {
-            background-color: rgb(255, 255, 255);
+            background-color:rgb(255, 255, 255);
+            text-align:center;
             
+        }
+
+        #this {
+            color:rebeccapurple;
+            font-size:32px;
+        }
+
+        #good {
+            color:royalblue;
+            font-size:32px;
+        }
+
+        .list {
+            color:red;
+            font-size:24px;
+        }
+
+        img {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            width:30%;
+
         }
     </style>
     <title>Macks Cool Webpage</title>
@@ -23,13 +48,17 @@
     </header>
 
     <main>
-        <h2>Contents</h2>
+        <h2 class = "headerOne">Contents</h2>
         <ul>
-            <li><a href = #fiveReasons>5 Reasons Why I am Awesome</a></li>
-            <li><a href = #topFive>Top 5 Funny Dog Moments</a> </li>
+            <li>
+                <a href = #fiveReasons>5 Reasons Why I am Awesome</a>
+            </li>
+            <li>
+                <a href = #topFive>Top 5 Funny Dog Moments</a>
+            </li>
         </ul>
         <h3 class = "headerOne" id = "fiveReasons" >5 Reasons Why I am Awesome</h3>
-        <ul>
+        <ul class = "list">
             <li>Im fun</li>
             <li>Im great</li>
             <li>My KD was higher than my GPA in highschool</li>
@@ -37,7 +66,7 @@
             <li>I dont need a 5th reason</li>
         </ul>
 
-        <p>Honestly this is just a formality!</p>
+        <p>Honestly <em id = "this">this</em> is just a formality!</p>
 
         <h2 class = "headerOne" >Photo of my Dog and Why he is the best!</h2>
 
@@ -47,12 +76,12 @@
 
         <h3 class = "headerOne" id = "topFive">Top 5 Funny Dog Moments</h3>
 
-        <ol>
+        <ol class = "list">
             <li>Did a blem</li>
             <li>Got caught in the trash</li>
             <li>Swallowed a tennis ball</li>
             <li>Did an Oh Noes</li>
-            <li>Was a good boy</li>
+            <li>Was a <strong id = "good">GOOD</strong> boy</li>
         </ol>
 
     </main>
